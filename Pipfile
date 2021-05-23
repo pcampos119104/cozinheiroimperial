@@ -10,6 +10,9 @@ whitenoise = "*"
 gunicorn = "*"
 
 [dev-packages]
+django-extensions = "*"
+ipython = "*"
+jupyter = "*"
 
 [requires]
 python_version = "3.9"
