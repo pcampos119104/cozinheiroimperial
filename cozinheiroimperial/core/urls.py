@@ -20,4 +20,5 @@ import cozinheiroimperial.core.views
 
 app_name = 'core'
 urlpatterns = [
+    path('', cozinheiroimperial.core.views.RecipeListView.as_view(), name='recipes'),
 ]

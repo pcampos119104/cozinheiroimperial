@@ -8,10 +8,17 @@ from cozinheiroimperial.django_assertions import assert_contains
 pytestmark = pytest.mark.django_db
 
 
-class TestRecipesView:
+class TestHomeView:
     def test_home_view(self, client):
         resp = client.get(reverse("home"))
         assert resp.status_code == 200
+
+
+class TestRecipesView:
+    def test_home_view(self, client):
+        resp = client.get(reverse("core:recipes"))
+        assert resp.status_code == 200
+
 
 '''
     def test_marca_create_view(self, client):
