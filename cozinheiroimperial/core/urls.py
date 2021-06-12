@@ -18,7 +18,6 @@ from django.urls import path
 
 import cozinheiroimperial.core.views
 
+app_name = 'core'
 urlpatterns = [
-    path('', cozinheiroimperial.core.views.home, name='home'),
-    path('admin/', admin.site.urls),
 ]
